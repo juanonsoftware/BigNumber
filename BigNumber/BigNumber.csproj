@@ -2,13 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.01</Version>
-    <Description>Provide Base36 and Base62 classes without limit on min value &amp; max value.
-These are also used for shortening a number (usually in base-10) or making a GUID shorter.
-Another point is to produce a shorter string from result of encryption method, like AES.</Description>
+    <Version>1.1.1</Version>
+    <Description>Targeting .NET Standard 2.0 allows this package to be used in any kind of .NET versions.
+
+Provide Base36 and Base62 classes without limit on min value &amp; max value.
+
+These are also used for shortening a number (usually in base-10) or making a GUID shorter. Another point is to produce a shorter string from result of encryption method, like AES.</Description>
     <PackageProjectUrl>https://github.com/juanonsoftware/BigNumber</PackageProjectUrl>
     <RepositoryUrl>https://github.com/juanonsoftware/BigNumber</RepositoryUrl>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageTags>base36; base62; base-conversion</PackageTags>
   </PropertyGroup>
 
 </Project>

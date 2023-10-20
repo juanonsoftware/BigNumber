@@ -30,9 +30,9 @@ namespace BigNumber
 
         protected abstract void Initialize(string valueAsString);
 
-        #region Public Override Methods
-
         public override abstract string ToString();
+
+        #region Public Override Methods
 
         public override int GetHashCode()
         {

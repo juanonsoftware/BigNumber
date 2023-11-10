@@ -22,6 +22,9 @@ jobs:
         dotnet-version: 6.0.x
     - name: Restore dependencies
       run: dotnet restore
-    - name: Test
+    - name: Run all tests
       run: dotnet test -c Debug --no-restore --verbosity normal      
-
+    - name: Build the solution
+      run: dotnet build --no-restore -c Release
+    - name: Create nuget package
+      run: dotnet pack -p:PackageVersion=1.1.1.231110 -c Release --no-build ${{ github.workspace }}/BigNumber/BigNumber.csproj

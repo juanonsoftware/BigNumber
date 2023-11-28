@@ -34,6 +34,20 @@ namespace BigNumberTests
         }
 
         [TestMethod]
+        public void CanCreateNewBase62NumberFromDecimalNumber()
+        {
+            var number = ((decimal)1000.1).ToBase62Number();
+            Assert.IsTrue(number.IntValue > 0);
+        }
+
+        [TestMethod]
+        public void CanGetDecimalFromABase62NumberOfADecimal()
+        {
+            var number = (10M).ToBase62Number();
+            Assert.AreEqual(10, number.AsDecimal());
+        }
+
+        [TestMethod]
         public void CanCreateNewBase62NumberFromString_02()
         {
             var number = new Base62Number("H2DEFX8YV");
